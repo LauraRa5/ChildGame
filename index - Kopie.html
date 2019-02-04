@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="jQuery/jquery.mobile-1.4.5.css">
+		<link rel="stylesheet" type="text/css" href="css/mycss.css">
+        <script type="text/javascript" src="jQuery/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div data-role="page" id="p0"> 
+            <div data-role="header"> 
+               
+            </div><!-- /header --> 
+            <div data-role="content"> 
+				<!--<img src="img/raupe1.png" alt="Raupe Sli">-->
+                <p>Hallo, ich bin Sli!
+                </p> 
+				 <p>komm und spiel mit mir!
+                </p> 
+            </div><!-- /content --> 
+            <div data-role="footer"> 
+		
+			<a href = "#p1" data-transition="fade" class="ui-btn">Spielen</a>
+            </div><!-- /footer --> 
+        </div>
+		
+		 <div data-role="page" id="p1"> 
+            <div data-role="header"> 
+             
+            </div><!-- /header --> 
+            <div data-role="content"> 
+                <p>Sprachausgabe
+                </p> 
+            </div><!-- /content --> 
+            <div data-role="footer"> 
+			<h4>Laura</h4> 
+			<a href = "#p2" data-transition="fade" class="ui-btn">Los!</a>
+            </div><!-- /footer --> 
+        </div>
+		
+		<div data-role="page" id="p2"> 
+            <div data-role="header"> 
+                <h1>JQuery Sagt Hallo</h1> 
+            </div><!-- /header --> 
+			
+            <div data-role="content"> 
+			
+                <canvas id="myCanvas" width="470" height="335" style="border:1px solid #d3d3d3;">
+                                    Your browser does not support the HTML5 canvas tag.
+				</canvas>
+			<p id="zeit"></p>
+				
+				<button class="ui-btn" id="btn1">Sag Hallo</button>
+            </div><!-- /content --> 
+            <div data-role="footer"> 
+			<h4>Laura</h4> 
+			<a href = "#p1" data-transition="flip" class="ui-btn">Weiter</a>
+            </div><!-- /footer --> 
+        </div>
+		<script type="text/javascript" src="js/myjs.js"></script>
+    </body>
+</html>
